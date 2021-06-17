@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * program execution starts in main 
+ * main - Entry point
  *
- * Return type should be int
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
