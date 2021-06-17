@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+/**
+ * program execution starts in main 
+ *
+ * Return 0
+ */
 int main(void)
 {
-	string prin=""Programming is like building a multilingual puzzle";
-	puts (string"\n");
-		return(0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
