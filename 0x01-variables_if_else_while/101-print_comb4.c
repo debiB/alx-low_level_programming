@@ -1,34 +1,36 @@
 #include <stdio.h>
 
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
-*/
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int thousands, tens, ones;
+	int c, i, k;
 
-	for (thousands = 0; thousands <= 9; thousands++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (tens = thousands + 1; tens <= 9; tens++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			for (ones = tens + 1; ones <= 9; ones++)
+			for (k = '0'; k <= '9'; k++)
 			{
-				putchar(thousands + '0');
-			 	putchar(tens + '0');
-			 	putchar(ones + '0');
-
-				if (thousands < 7)
+				if (c < i && i < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(c);
+					putchar(i);
+					putchar(k);
+
+					if (c != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
 
-	
 	putchar('\n');
 
 	return (0);
