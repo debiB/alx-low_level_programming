@@ -15,15 +15,16 @@ int main(void)
 		{
 			 for (ones = tens + 1; ones <= 9; ones++)
 			 {
-			 putchar(thousands + '0');
-			 putchar(tens + '0');
-			 putchar(ones + '0');
+			 	putchar(thousands + '0');
+			 	putchar(tens + '0');
+			 	putchar(ones + '0');
 
-			if (thousands < 7)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				if (thousands < 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			 }
 		}
 	}
 
