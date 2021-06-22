@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "string.h"
 /**
  * print_alphabet_x10 - print entire alphabet on 10 lines
  *
@@ -9,14 +8,14 @@
 void print_alphabet_x10(void)
 {
 	int i;
-	char charachter;
+	char character;
 
 	for (i = 0; i < 10; i++)
 	{
-	for (charachter = 'a'; charachter <= 'z'; charachter++)
+	for (character = 'a'; character <= 'z'; character++)
 	{
-		_putchar(charachter);
-	}		
+		_putchar(character);
+	}
 	_putchar('\n');
 	}
 }
