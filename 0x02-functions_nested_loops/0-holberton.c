@@ -1,22 +1,19 @@
 #include "holberton.h"
-
 /**
- * main - Entry point for writing entire lowercase alphabet except q and e
+ * main - check the code for Holberton School students.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
+
 int main(void)
 {
-	char hol[8]="Holberton";
+	char holberton[9] = "Holberton";
 	int i;
-	
-	for(i=0; i<9; i++)
+
+	for (i = 0; i < 9; i++)
 	{
-		 
-		_putchar(hol[i]);
+		_putchar(holberton[i]);
 	}
 	_putchar('\n');
-
-	return(0);
+	return (0);
 }
-
