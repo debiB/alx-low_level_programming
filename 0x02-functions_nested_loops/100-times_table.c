@@ -9,15 +9,15 @@
 */
 void print_times_table(int n)
 {
-	int i, j, mult;
+	int i, j, multiplied_value;
 	if(n>=0 && n<= 15)
 	{
 		for(i = 0; i <= n; i++)
 		{
 			for (j = 0; j <= n; j++)
 			{
-				mult = i*j;
-				if (x == 0)
+				multiplied_value = i*j;
+				if (j == 0)
 				{
 				_putchar(multiplied_value + '0');
 				}
@@ -33,7 +33,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(multiplied_value + '0');
 				}
-				if (x != (n*n))
+				if (multiplied_value != (n*n))
 				{
 				_putchar(',');
 				}
