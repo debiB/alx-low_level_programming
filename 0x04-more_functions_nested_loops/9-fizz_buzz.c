@@ -9,30 +9,33 @@
  */
 int main(void)
 {
-	int i;
-	for (i = 1; i < 100; i++)
+	int count = 1;
+
+	while (count < 101)
 	{
-		if (i % 3 == 0)
+		if (count % 3 == 0 && count % 5 == 0)
 		{
-			printf("Fizz");
+			printf("%s", "FizzBuzz");
 		}
-		else if (i % 5 == 0)
-                {
-                        printf("Buzz");
-                }
-		else if (i % 5 == 0 && i % 3 == 0)
-                {
-                        printf("FizzBuzz");
-                }
+		else if (count % 3 == 0)
+		{
+			printf("%s", "Fizz");
+		}
+		else if (count % 5 == 0)
+		{
+			printf("%s", "Buzz");
+		}
 		else
 		{
-			printf("%d",i);
+			printf("%d", count);
 		}
-		if(i != 100)
+
+		if (count != 100)
 		{
-		_putchar('\n');
+		printf(" ");
 		}
+		count++;
 	}
-	_putchar('\n');
-	return(0);
+	printf("\n");
+	return (0);
 }
